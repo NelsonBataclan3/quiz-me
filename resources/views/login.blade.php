@@ -25,6 +25,7 @@
       }else {
          $error = "Your Login Name or Password is invalid";
       }
+//test
    }
 ?>
 
