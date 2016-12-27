@@ -17,12 +17,9 @@
 
 @section('body')
 
-	<div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>I Love Food</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <h2>Lesson of the Day</h2>
+      <h5><span class="glyphicon glyphicon-time"></span>January 4, 2017</h5>
+      <h5><span class="label label-danger">Important</span> <span class="label label-primary">Section Love</span></h5><br>
       <p></p>
 
       <?php
@@ -93,5 +90,4 @@
           </div>
         </div>
       </div>
-    </div>
 @stop

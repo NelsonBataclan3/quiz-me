@@ -24,6 +24,3 @@ Route::post('welcome', function(){
 Route::get('profile', 'PagesController@profile');
 
 Route::get('lessons', 'PagesController@lessons');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');

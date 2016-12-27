@@ -52,14 +52,22 @@
       </ul><br>
     </div>
 
+    <div class="col-sm-9">
+      <h4 align="right"><small>Welcome User!</small> <img src="/rsc/users/sampleUser.png" width="100px" height="100px" style="border:2px solid black" /></h4>
+      <h5 align="right"><a href="/">Logout</a></h5>
+      <hr>
+      <h4><marquee>Welcome to QuizMe!</marquee></h4>
+      <hr>
+
     @yield('body')
 
+
+    </div>
   </div>
 </div>
 
 <footer class="container-fluid">
   <p>QuizMe! Alpha Build 2016-2017</p>
-  <p><a href="/">Logout</a></p>
 </footer>
 
 </body>
