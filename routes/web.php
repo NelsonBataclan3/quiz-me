@@ -24,3 +24,7 @@ Route::post('welcome', function(){
 Route::get('profile', 'PagesController@profile');
 
 Route::get('lessons', 'PagesController@lessons');
+
+Route::get('test', function(){
+	return view('testpage');
+});
