@@ -17,6 +17,11 @@
   <script src="/js/jquery-3.1.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/css/stylenew.css" type="text/css" />
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });
+  </script>
   
 
 </head>
@@ -162,7 +167,20 @@
     </div>
   </div><br> -->
   
-  <h2>What our customers say</h2>
+  <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <h2>Click the coaches for a message!</h2>
+            <a data-toggle="popover" title="Coach says:" data-content="Practice makes perfect!"><img src="/rsc/coach/f1neutral.png" width="10%" /></a>
+            <a data-toggle="popover" title="Coach says:" data-content="Never give up, never surrender!"><img src="/rsc/coach/f2neutral.png" width="10%" /></a>
+            <a data-toggle="popover" title="Coach says:" data-content="Lovely weather aye?"><img src="/rsc/coach/m1neutral.png" width="10%" /></a>
+            <a data-toggle="popover" title="Coach says:" data-content="Math is easy if you dedicate yourself!"><img src="/rsc/coach/m2neutral.png" width="10%" /></a>
+        </div>
+    </div>
+</div>
+  
+  
+
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
