@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('audio')
-	<audio id="myaudio" loop="true" autoplay="true" src="/rsc/003.mp3"></audio>
+	<audio id="myaudio" loop="true" autoplay="true" src="/rsc/006.mp3"></audio>
 @stop
 
 @section('title')
