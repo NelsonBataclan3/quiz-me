@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 
-<audio id="myaudio" loop="true" autoplay="true" src="/rsc/002.mp3"></audio>
+<audio id="myaudio" loop="true" autoplay="true" src="/rsc/005.mp3"></audio>
 <script>
     var audio = document.getElementById("myaudio");
-    audio.volume = 0.05;
+    audio.volume = 0.10;
 </script>
 
   <title>QuizMe!</title>
@@ -171,10 +171,16 @@
     <div class="container">
         <div class="row">
             <h2>Click the coaches for a message!</h2>
-            <a data-toggle="popover" title="Coach says:" data-content="Practice makes perfect!"><img src="/rsc/coach/f1neutral.png" width="10%" /></a>
-            <a data-toggle="popover" title="Coach says:" data-content="Never give up, never surrender!"><img src="/rsc/coach/f2neutral.png" width="10%" /></a>
-            <a data-toggle="popover" title="Coach says:" data-content="Lovely weather aye?"><img src="/rsc/coach/m1neutral.png" width="10%" /></a>
-            <a data-toggle="popover" title="Coach says:" data-content="Math is easy if you dedicate yourself!"><img src="/rsc/coach/m2neutral.png" width="10%" /></a>
+
+            <center>
+
+            <a data-toggle="popover" data-placement="left" title="Sam says:" data-content="Practice makes perfect!"><img src="/rsc/coach/f1neutral.png" width="10%" /></a>
+            <a data-toggle="popover" data-placement="bottom" title="Lizbeth says:" data-content="Never give up, never surrender!"><img src="/rsc/coach/f2neutral.png" width="10%" /></a>
+            <a data-toggle="popover" data-placement="bottom" title="Arthur says:" data-content="Lovely weather aye?"><img src="/rsc/coach/m1neutral.png" width="10%" /></a>
+            <a data-toggle="popover" data-placement="right" title="James says:" data-content="Math is easy if you dedicate yourself!"><img src="/rsc/coach/m2neutral.png" width="10%" /></a>
+
+            </center>
+
         </div>
     </div>
 </div>
@@ -187,18 +193,22 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>Quiz Me! Staff<br><span style="font-style:normal;">Ronan</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+        <h4>Quiz Me! Staff<br><span style="font-style:normal;">Nelson</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>Quiz Me! Staff<br><span style="font-style:normal;">Vince</span></h4>
+      </div>
+      <div class="item">
+        <h4>Quiz Me! Staff<br><span style="font-style:normal;">Jolas</span></h4>
       </div>
     </div>
 
