@@ -8,17 +8,18 @@
     Profile
 @stop
 
-
-@section('activenav')
-	<li><a href="/welcome">Home</a></li>
-    <li><a href="/lessons">Lessons</a></li>
-    <li class="active"><a href="#">Profile</a></li>
+@section('navbar')
+  <li><a href="/lessons">LESSON</a></li>
+  <li><a href="#profile">PROFILE</a></li>
 @stop
 
 @section('body')
 
+<div id="profile" class="container-fluid bg-grey">
+      <center><h2>Select Coach</h2></center>
+</div>
+
 	<center>
-	<h2>Select Coach</h2>
 	<select class="form-control" size="1" style="width:auto;font-size: 20px;" name="selectCoach" id="selectCoach" onchange="changeCoach(this.value)">
 		<option value="0">Arthur</option>
 		<option value="1">James</option>

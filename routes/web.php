@@ -28,3 +28,7 @@ Route::get('lessons', 'PagesController@lessons');
 Route::get('test', function(){
 	return view('testpage');
 });
+
+Route::get('lessons', function(){
+	return view('lessons');
+});

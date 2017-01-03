@@ -40,7 +40,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
       @yield('navbar')
-        <li><a href="/profile">PROFILE</a></li>
+        
         <!--<li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>-->
         <li>&nbsp&nbsp&nbsp</li>

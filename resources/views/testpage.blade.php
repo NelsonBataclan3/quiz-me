@@ -14,6 +14,7 @@
 @section('navbar')
   <li><a href="#lesson">LESSON</a></li>
   <li><a href="#didyouknow">DID YOU KNOW?</a></li>
+  <li><a href="/profile">PROFILE</a></li>
 @stop
 
 @section('body')
@@ -41,7 +42,7 @@
       <h5><span class="glyphicon glyphicon-time"> January 2016</h5>
       <h4>Finding the value of expressions</h4><br>
       <p>Learn how to find the values of variables!</p>
-      <br><button class="btn btn-default btn-lg">Go to Lesson</button>
+      <br><a href="/lessons"><button class="btn btn-default btn-lg">Go to Lesson</button></a>
     </div>
     
   </div>
