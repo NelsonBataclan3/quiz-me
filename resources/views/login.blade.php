@@ -66,7 +66,7 @@
             
             <div class="form-group">
              <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
              <input type="username" name="username" class="form-control" placeholder="Username" value="" maxlength="40" />
                 </div>
                 <span class="text-danger"></span>
