@@ -30,9 +30,30 @@
 		return view('home');
 	});
 
+//add
+		Route::get('admin', function(){
+		return view('admin');
+	});
+		//end
+
+		Route::get('teacher', function(){
+		return view('teacher');
+	});
+
+
 	Route::get('lessons', function(){
 		return view('lessons');
 	});
+
+	Route::get('register', function(){
+		return view('auth/register');
+	});
+
+
 	Auth::routes();
 
 	Route::get('/home', 'PagesController@index');
+
+	Route::get('/uploadfile', 'FileuploadingController@index');
+	Route::post('/uploadfile', 'FileuploadingController@showfileupload');
+

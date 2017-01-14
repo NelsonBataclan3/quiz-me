@@ -1,17 +1,19 @@
 @extends('master')
 
-
-@if (Auth::user()->status === 1)
-    <script type="text/javascript">
-      window.location = "/teacher";//here double curly bracket
-    </script>
-@elseif (Auth::user()->status === 2)
-    <script type="text/javascript">
-      window.location = "/admin";//here double curly bracket
-    </script>
-@endif 
-
-
+        @if (Auth::guest())
+            <script type="text/javascript">
+            window.location = "/login";//here double curly bracket
+            </script>
+        @elseif (Auth::user()->status === 0)
+          <script type="text/javascript">
+          window.location = "/home";//here double curly bracket
+          </script>
+        @elseif (Auth::user()->status === 1)
+          <script type="text/javascript">
+          window.location = "/teacher";//here double curly bracket
+          </script>
+        @endif
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +26,12 @@
 @stop
 
 @section('navbar')
-  <li><a href="#lesson">LESSON</a></li>
-  <li><a href="#didyouknow">DID YOU KNOW?</a></li>
+  <li><a href="#lesson">LESSONS</a></li>
+  <li><a href="#register">REGISTER</a></li></li>
   <li><a href="/profile">PROFILE</a></li>
 @stop
 
-@section('home')
+@section('admin')
 
 <div class="jumbotron text-center">
   <h1><img src="/rsc/bulbfinal.png" width="20%" /></h1> 
@@ -50,25 +52,26 @@
       <span class="glyphicon glyphicon-education logo"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Lesson of the day!</h2><br>
+      <h2>Latest lesson</h2><br>
       <h5><span class="glyphicon glyphicon-time"> January 2016</h5>
       <h4>Finding the value of expressions</h4><br>
       <p>Learn how to find the values of variables!</p>
-      <br><a href="/lessons"><button class="btn btn-default btn-lg">Go to Lesson</button></a>
+      <br><a href="/uploadfile"><button class="btn btn-default btn-lg">Go to Lessons</button></a>
     </div>
     
   </div>
 </div>
 
-<div id="didyouknow" class="container-fluid bg-grey">
+<div id="register" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-question-sign logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Did you know?</h2><br>
-      <h4><strong>A hint from coach! :</strong> Did you know that replacing the values of X can help you find the missing value of the variable?</h4><br>
-      <!--<p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <h2>Register</h2>
+      <a href="/register"><button class="btn btn-default btn-lg">Register New Student</button></a>&nbsp;&nbsp;
+      <a href="/register"><button class="btn btn-default btn-lg">Register New Teacher</button></a>
+            <!--<p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
     </div>
   </div>
@@ -143,7 +146,7 @@
       </div>
     </div>
   </div><br> -->
-  
+  <!--
   <div class="container-fluid">
     <div class="container">
         <div class="row">
@@ -165,7 +168,7 @@
   
 
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
+    Indicators 
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -173,7 +176,7 @@
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+     Wrapper for slides 
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <h4>Quiz Me! Staff<br><span style="font-style:normal;">Ronan</span></h4>
@@ -189,7 +192,7 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+     Left and right controls 
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -200,7 +203,7 @@
     </a>
   </div>
 </div>
-
+-->
 <!--
 <div id="pricing" class="container-fluid">
   <div class="text-center">

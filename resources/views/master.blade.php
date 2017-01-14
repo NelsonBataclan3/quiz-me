@@ -51,7 +51,13 @@
         <!--<li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>-->
         <li>&nbsp&nbsp&nbsp</li>
-        <li>Welcome, {{ Auth::user()->name }} !</li>
+        @if (Auth::user()->status === 0)
+          <li>Welcome, {{ Auth::user()->name }}!</li>
+        @elseif (Auth::user()->status === 1)
+          <li>Welcome, Teacher {{ Auth::user()->name }}</li>
+        @elseif (Auth::user()->status === 2)
+          <li>Welcome, Admin {{ Auth::user()->name }}</li>
+        @endif
         <br />
         <li>&nbsp&nbsp&nbsp</li>
         <a href="{{ url('/logout') }}"
@@ -66,9 +72,15 @@
     </div>
   </div>
 </nav>
+        @if (Auth::user()->status === 0)
+          @yield('home')
+        @elseif (Auth::user()->status === 1)
+          @yield('teacher')
+        @elseif (Auth::user()->status === 2)
+          @yield('admin')
+        @endif
 
 
-@yield('body')
 
 
 <footer class="container-fluid text-center">
