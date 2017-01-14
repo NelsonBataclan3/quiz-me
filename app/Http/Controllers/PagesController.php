@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace QuizMe\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -16,6 +16,16 @@ class PagesController extends Controller
 
     public function lessons(){
     	return view('lessons');
+    }
+
+    public function index()
+    {
+        return view('testpage');
+    }
+
+    public function notlogin()
+    {
+    	return view('auth/login');
     }
 }
     

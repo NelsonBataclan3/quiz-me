@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace QuizMe\Http\Controllers\Auth;
 
-use App\User;
+use QuizMe\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use QuizMe\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

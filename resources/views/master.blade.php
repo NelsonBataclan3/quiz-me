@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+@if (Auth::guest())
+     
+    <script type="text/javascript">
+    window.location = "/login";//here double curly bracket
+    </script>
+
+@else
 <head>
 
 @yield('audio')
@@ -44,10 +51,17 @@
         <!--<li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>-->
         <li>&nbsp&nbsp&nbsp</li>
-        <li>Welcome, USER!</li>
+        <li>Welcome, {{ Auth::user()->name }} !</li>
         <br />
         <li>&nbsp&nbsp&nbsp</li>
-        <a href="#">Logout</a>
+        <a href="{{ url('/logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
       </ul>
     </div>
   </div>
@@ -102,4 +116,6 @@ $(document).ready(function(){
 </script>
 
 </body>
+
+@endif
 </html>
