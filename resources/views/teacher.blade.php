@@ -1,17 +1,15 @@
 @extends('master')
 
-
-@if (Auth::user()->status === 1)
-    <script type="text/javascript">
-      window.location = "/teacher";//here double curly bracket
-    </script>
-@elseif (Auth::user()->status === 2)
-    <script type="text/javascript">
-      window.location = "/admin";//here double curly bracket
-    </script>
-@endif 
-
-
+        @if (Auth::user()->status === 0)
+          <script type="text/javascript">
+          window.location = "/home";//here double curly bracket
+          </script>
+        @elseif (Auth::user()->status === 2)
+          <script type="text/javascript">
+          window.location = "/admin";//here double curly bracket
+          </script>
+        @endif
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,11 +23,12 @@
 
 @section('navbar')
   <li><a href="#lesson">LESSON</a></li>
-  <li><a href="#didyouknow">DID YOU KNOW?</a></li>
+  <li><a href="/profile">STUDENTS</a></li>
+  <li><a href="{{ url('/register') }}">REGISTER</a></li></li>
   <li><a href="/profile">PROFILE</a></li>
 @stop
 
-@section('home')
+@section('teacher')
 
 <div class="jumbotron text-center">
   <h1><img src="/rsc/bulbfinal.png" width="20%" /></h1> 

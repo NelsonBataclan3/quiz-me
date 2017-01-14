@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!--<meta name="csrf-token" content="{{ csrf_token() }}">-->
 
     <title>{{ config('app.name', 'QuizMe') }}</title>
 
@@ -14,11 +14,11 @@
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
-    <script>
+    <!--<script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
-    </script>
+    </script>-->
 </head>
 <body>
     <div id="app">
@@ -47,11 +47,11 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links
                         @if (Auth::guest())
-                           <!-- <li><a href="{{ url('/login') }}">Login</a></li> 
-                            <li><a href="{{ url('/register')}}">Register</a></li>-->
+                           <li><a href="{{ url('/login') }}">Login</a></li> 
+                            <li><a href="{{ url('/register')}}">Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -70,7 +70,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                         @endif
                     </ul>
