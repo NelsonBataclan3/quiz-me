@@ -11,20 +11,28 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
 
-Route::get('welcome', 'PagesController@welcome');
+	Route::get('/', function () {
+	    return view('auth/login');
+	});
 
-Route::post('welcome', function(){
-	return view('welcome');
-});
+	Route::get('welcome', 'PagesController@welcome');
 
-Route::get('profile', 'PagesController@profile');
+	Route::post('welcome', function(){
+		return view('welcome');
+	});
 
-Route::get('lessons', 'PagesController@lessons');
+	Route::get('profile', 'PagesController@profile');
 
-Route::get('test', function(){
-	return view('testpage');
-});
+	Route::get('lessons', 'PagesController@lessons');
+
+	Route::get('home', function(){
+		return view('home');
+	});
+
+	Route::get('lessons', function(){
+		return view('lessons');
+	});
+	Auth::routes();
+
+	Route::get('/home', 'PagesController@index');

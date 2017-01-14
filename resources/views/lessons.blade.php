@@ -8,13 +8,17 @@
     Lessons
 @stop
 
-
-@section('activenav')
-	<li><a href="/welcome">Home</a></li>
-    <li class="active"><a href="#">Lessons</a></li>
-    <li><a href="/profile">Profile</a></li>
+@section('navbar')
+  <li><a href="#lesson">LESSON</a></li>
+  <li><a href="/profile">PROFILE</a></li>
 @stop
 
 @section('body')
-
+	<div id="lesson" class="container-fluid bg-grey">
+  	<div class="row">
+    <div class="col-sm-8">
+      <h2>Whoops! Nothing yet! </h2>
+    </div>
+  </div>
+</div>
 @stop	

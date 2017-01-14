@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'QuizMe!',
 
     /*
     |--------------------------------------------------------------------------
@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        QuizMe\Providers\AppServiceProvider::class,
+        QuizMe\Providers\AuthServiceProvider::class,
+        // QuizMe\Providers\BroadcastServiceProvider::class,
+        QuizMe\Providers\EventServiceProvider::class,
+        QuizMe\Providers\RouteServiceProvider::class,
 
     ],
 
