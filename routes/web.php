@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('auth/login');
+    return view('login');
 });
 
 Route::get('welcome', 'PagesController@welcome');
@@ -32,6 +32,3 @@ Route::get('test', function(){
 Route::get('lessons', function(){
 	return view('lessons');
 });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
