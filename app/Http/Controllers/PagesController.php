@@ -20,7 +20,7 @@ class PagesController extends Controller
 
     public function index()
     {
-        return view('testpage');
+        return view('home');
     }
 
     public function notlogin()

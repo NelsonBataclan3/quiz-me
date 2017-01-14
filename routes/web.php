@@ -26,8 +26,8 @@
 
 	Route::get('lessons', 'PagesController@lessons');
 
-	Route::get('test', function(){
-		return view('testpage');
+	Route::get('home', function(){
+		return view('home');
 	});
 
 	Route::get('lessons', function(){
@@ -36,5 +36,3 @@
 	Auth::routes();
 
 	Route::get('/home', 'PagesController@index');
-
-	Route::get('notlogin', ['as' => 'notlogin', 'uses' => 'PagesController@notlogin']);
